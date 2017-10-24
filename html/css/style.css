@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@font-face {
+    font-family: 'signpaintermedium';
+    src: url('../fonts/signpainter-housescript-webfont.woff2') format('woff2'),
+         url('../fonts/signpainter-housescript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+a{
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 300ms;
+  -ms-transition: all ease-in-out 300ms;
+}
+a:hover,a:focus{text-decoration: none;}
+
+
+
+body{
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight:300;
+    color: #8c8c8c;
+    overflow-x: hidden;
+    line-height: 20px;
+    background-color: #f2f4fa;
+}
+
+header{height: 50px; background-color: #fcfdff; border-bottom: 1px solid #e8ebf6;}
+header .navbar-brand{font-family: 'signpaintermedium';}
+
+
+.main-header .navbar{padding: 0 20px;     height: 50px}
+.main-header .navbar-brand{padding: 0; font-size: 40px; line-height: 40px; color: #0e1519;}
+
+.breadcrumb-wrap{display: inline-block;}
+.breadcrumb-wrap ul{margin: 0; padding: 0; list-style: none;}
+.breadcrumb-wrap ul li{ position: relative; }
+.breadcrumb-wrap ul li:before{position: absolute; content: '/'; left: 0; top: 0; font-size: 40px; color: #c2c7d3;}
+.breadcrumb-wrap ul li a{padding:5px 20px; color: #161d30;}
+.sidebar-tgl-bar{    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #e8ebf6;
+    width: 50px;
+    border-bottom: 1px solid #e8ebf6;
+    padding: 12px 15px;
+    height: 50px;
+    text-align: center;background-color: #fff; cursor: pointer;}
+.sidebar-tgl-bar img {max-width: 100%;}
+
+
+
+
+/*---Sidebar---*/
+
+.sidebar {
+  width: 50px;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #e8ebf6;
+  background-color: #fff;
+}
+
+.sidebar .navbar-nav a{    padding: 15px 15px; display: block;}
+.sidebar .navbar-nav a img{ max-width: 100%; }
+.sidebar .navbar-nav a:hover{background-color: #f2f4fa; box-shadow: inset -3px 0 0 #4859b8; }
+
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.main-wrapper{width: 100%; padding-left: 50px; padding-top: 50px; min-height: 800px;}
+
+.content-wrapper{padding:20px;}
+.content-wrapper.topPadding{padding-top:50px;}
+.wrapper-header{height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #e8ebf6;
+    padding-right: 15px;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding-left: 50px;}
+
+.wrapper-header-left{float: left; position: relative; z-index: 2;}
+.wrapper-header-right{float: right; 
+    display: flex;
+    align-items: center;
+    height: 50px; position: relative; z-index: 2;}
+
+.refine-link{font-size: 15px; color: #000000 !important; font-weight: 400; display: inline-block; cursor: pointer; text-transform: uppercase; padding: 14px 20px;
+    border-right: 1px solid #e8ebf6;}
+.refine-link img{    max-width: 20px;}
+
+
+.filter-nav-holder {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.filter-nav{display: inline-block; margin: 0; padding: 0;}
+.filter-nav li{list-style: none; display: inline-block;}
+.filter-nav li a{font-size: 15px; text-transform: uppercase; color: #000; font-weight: 400; padding: 15px; display: block;}
+.filter-nav li a:hover{box-shadow: inset 0 -3px 0 #4859b8; color: #4859b8;}
+
+
+.btn.btn-comn{background-color: #3f51b5; color: #fff; font-size: 13px; text-transform: uppercase;}
+.btn.btn-comn:hover{background-color: #283892;}
+.btn:focus{outline: none; box-shadow: none;}
