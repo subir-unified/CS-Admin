@@ -26,16 +26,25 @@
 <div class="main-header-right">
           <ul class="navbar-nav navbar-setting ml-auto">
             <li class="nav-item active">
-              <a class="nav-link notification-icon" href="#"><img src="images/notification.svg"></a>
+              <a class="nav-link notification-icon" href="#"><img src="images/notification.svg">
+              <span class="numb red">3</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link envelope-icon" href="#"><img src="images/envelope.svg"></a>
+              <a class="nav-link envelope-icon" href="#"><img src="images/envelope.svg">
+            <span class="numb blue">5</span>
+              </a>
+              
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="images/calendar.svg"></a>
+              <a class="nav-link" href="#"><img src="images/calendar.svg">
+              <span class="numb ylw">4</span>
+              </a>          
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="images/coins.svg"></a>
+              <a class="nav-link" href="#"><img src="images/coins.svg">
+ <span class="numb grn">35</span>
+              </a>
             </li>
           </ul>
 
@@ -44,7 +53,9 @@
               <a class="nav-link prfl-info-link" href="#"><img src="images/prf-img.jpg"></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link cart-info-link" href="#"><img src="images/bag.svg"></a>
+              <a class="nav-link cart-info-link" href="#"><img src="images/bag.svg">
+              <span class="numb">2</span>
+              </a>
             </li>
             
           </ul>
@@ -65,21 +76,39 @@
             </li>
             <li class="nav-item">
               <a  href="#"><img src="images/icon2.png"></a>
+              <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
             <li class="nav-item">
               <a  href="#"><img src="images/icon3.png"></a>
+              <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
             <li class="nav-item">
               <a  href="#"><img src="images/icon4.png"></a>
+              <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
             <li class="nav-item">
               <a  href="#"><img src="images/icon5.png"></a>
+                <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
              <li class="nav-item">
               <a  href="#"><img src="images/icon6.png"></a>
+              <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
             <li class="nav-item">
               <a  href="#"><img src="images/icon7.png"></a>
+              <div class="sidebar-sub-nav">
+              <h4>Settings</h4>
+              </div>
             </li>
           </ul>
 </div>
@@ -90,8 +119,49 @@
    <div class="wrapper-header clearfix">
 
    <div class="mr-auto wrapper-header-left">
+
+   <div class="refine-wrap">
    <a class="refine-link"><span class="icon"><img src="images/filter-icon.png"></span> Refine</a>
-   <a class="search-link"><span class="icon"><img src=""></span></a>
+   <div class="refine-list-wrap">
+
+<div class="refine-list-box">
+<h4>Sort by</h4>
+<ul>
+<li>
+  <div class="custom-check">
+  <input type="checkbox" id="checkbox1">
+  <label for="checkbox1">
+  All
+  </label>
+  </div>
+
+</li>
+<li></li>
+</ul>
+</div>
+
+<div class="refine-list-box">
+</div>
+
+   </div>
+   </div>
+
+
+<div class="topSearch-wrp" style="display: none;">
+<a href="javascript:;" class="topSearch-link"><span class="icon"></span></a>
+
+<div class="topSearch-box">
+<form>
+<div class="topSearch-group">
+<input type="text" class="form-control" placeholder="Search">
+<button type="button" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+</form>
+
+</div>
+
+</div><!--end topSearch-wrp-->
+
    </div>
 
 <div class="filter-nav-holder">
@@ -129,5 +199,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+/*for refine*/
+  $(document).ready(function(){
+$('.refine-link').on('click', function(){
+$(this).parents('.refine-wrap').toggleClass('active');
+var nextV = $(this).next();
+console.log(nextV);
+$(nextV).toggle('show');
+
+})
+
+});
+
+</script>
+
   </body>
 </html>
