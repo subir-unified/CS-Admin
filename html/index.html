@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/style.css" rel="stylesheet">
@@ -124,37 +125,53 @@
    <a class="refine-link"><span class="icon"><img src="images/filter-icon.png"></span> Refine</a>
    <div class="refine-list-wrap">
 
+<div class="refine-list-wrap-inr">
+
 <div class="refine-list-box">
 <h4>Sort by</h4>
 <ul>
-<li>
-  <div class="custom-check">
-  <input type="checkbox" id="checkbox1">
-  <label for="checkbox1">
-  All
-  </label>
-  </div>
-
-</li>
-<li></li>
+<li><div class="custom-radio"><input type="radio" name="sortByradio" id="radio1"><label for="radio1">Newest</label></div></li>
+<li><div class="custom-radio"><input type="radio" name="sortByradio" id="radio2"><label for="radio2">Oldest</label></div></li>
+<li><div class="custom-radio"><input type="radio" name="sortByradio" id="radio3"><label for="radio3">Most Expensive</label></div></li>
+<li><div class="custom-radio"><input type="radio" name="sortByradio" id="radio4"><label for="radio4">Least Expensive</label></div></li>
 </ul>
 </div>
 
 <div class="refine-list-box">
+<h4>Category</h4>
+<ul>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check1"><label for="check1">Business</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check2"><label for="check2">Computers</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check3"><label for="check3">Education</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check4"><label for="check4">Medical</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check5"><label for="check5">People</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check6"><label for="check6">Professions</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check7"><label for="check7">Education</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check8"><label for="check8">Medical</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check9"><label for="check9">People</label></div></li>
+<li><div class="custom-check"><input type="checkbox" name="categoryCheck" id="check10"><label for="check10">Professions</label></div></li>
+
+</ul>
+</div>
+
+</div>
+
+<div class="clearAll-wrap">
+<a href="#" class="btn clearAll">Clear All</a>
 </div>
 
    </div>
    </div>
 
 
-<div class="topSearch-wrp" style="display: none;">
-<a href="javascript:;" class="topSearch-link"><span class="icon"></span></a>
+<div class="topSearch-wrp">
+<!-- <a href="javascript:;" class="topSearch-link"><span class="icon"><img src="images/search-icon.svg"></span></a> -->
 
 <div class="topSearch-box">
 <form>
 <div class="topSearch-group">
 <input type="text" class="form-control" placeholder="Search">
-<button type="button" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+<button type="button" class="search-btn"><img src="images/search-icon.svg"></button>
 </div>
 </form>
 
@@ -189,6 +206,92 @@
 
    <div class="content-wrapper topPadding">
 
+<h2 class="heading-text">Pick a video style</h2>
+
+<div class="row listing-wrap">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 listing-col">
+<div class="listing-block">
+<div class="img-sec">
+<img src="images/block-img1.jpg" alt="">
+
+<div class="listing-selected-actions">
+<a href="#" class="button-action button-action-like active"></a>
+<a href="#" class="button-action button-action-cart active"></a>
+</div>
+
+
+<div class="overlay">
+
+<div class="listing-block-actions">
+<a href="#" class="button-action button-action-play"></a>
+<a href="#" class="button-action button-action-like active"></a>
+<a href="#" class="button-action button-action-cart active"></a>
+</div>
+
+
+</div>
+
+</div>
+
+<div class="listing-text">
+<h3>Nam cursus libero cerat viverra</h3>
+<div class="listing-sm-info">
+<span class="type">Standard</span>
+<span class="catg">Business</span>
+
+</div>
+<div class="listing-dsc-text">
+<p>Duis bum nibh vitae vulputate. Cras arcuph aretra sit amet mollis quis erat.</p>
+</div>
+
+</div>
+
+</div><!--end listing-block-->
+</div><!--end listing-col-->
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 listing-col">
+<div class="listing-block">
+<div class="img-sec">
+<img src="images/block-img1.jpg" alt="">
+</div>
+
+<div class="listing-text">
+<h3>Nam cursus libero cerat viverra</h3>
+<div class="listing-sm-info">
+<span class="type">Standard</span>
+</div>
+<div class="listing-dsc-text">
+<p>Duis bum nibh vitae vulputate. Cras arcuph aretra sit amet mollis quis erat.</p>
+</div>
+
+</div>
+
+</div><!--end listing-block-->
+</div><!--end listing-col-->
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 listing-col">
+<div class="listing-block">
+<div class="img-sec">
+<img src="images/block-img1.jpg" alt="">
+</div>
+
+<div class="listing-text">
+<h3>Nam cursus libero cerat viverra</h3>
+<div class="listing-sm-info">
+<span class="type">Standard</span>
+</div>
+<div class="listing-dsc-text">
+<p>Duis bum nibh vitae vulputate. Cras arcuph aretra sit amet mollis quis erat.</p>
+</div>
+
+</div>
+
+</div><!--end listing-block-->
+</div><!--end listing-col-->
+
+
+</div><!--end row  listing-wrap-->
+
     </div>
 
 </div>
@@ -196,23 +299,87 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="js/perfect-scrollbar.js"></script>
 
 <script type="text/javascript">
 /*for refine*/
   $(document).ready(function(){
-$('.refine-link').on('click', function(){
-$(this).parents('.refine-wrap').toggleClass('active');
-var nextV = $(this).next();
-console.log(nextV);
-$(nextV).toggle('show');
 
-})
+$('.refine-link').on('click', function(){
+
+$(this).parents('.refine-wrap').toggleClass('active');
+var nextContent = $(this).next();
+$(nextContent).slideToggle('show');
+});
+
+$('.refine-wrap').on('click', function(event){
+event.stopPropagation();
+});
+
+$(document).on('click', function(){
+  $('.refine-list-wrap').slideUp('show');
+  $('.refine-wrap').removeClass('active');
+});
 
 });
+
+/*for topSearch*/
+/*$(document).ready(function(){
+      $('.topSearch-link').on('click', function(event){
+        event.stopPropagation();
+        $('.topSearch-box').slideToggle();
+      });
+      $('.topSearch-wrp').on('click', function(event){
+        event.stopPropagation();
+      });
+
+      $(document).on('click', function(){
+        $('.topSearch-box').slideUp();
+      });
+  });*/
+
+$(document).ready(function(){
+      $('.topSearch-group .search-btn').on('click', function(){
+        $('.topSearch-group').toggleClass('active');
+      });
+
+  });
+
+$(document).ready(function(){
+      $('.sidebar-tgl-bar').on('click', function(){
+        $('.sidebar').toggleClass('off');
+        $('.main-wrapper').toggleClass('full');
+      });
+
+  });
+
+$(document).ready(function(){
+
+const ps = new PerfectScrollbar('.refine-list-wrap-inr', {
+  wheelSpeed: 2,
+  wheelPropagation: true,
+  minScrollbarLength: 20
+});
+ 
+});
+
+
+function heightCal(){
+var wHeight = $(window).height();
+var calHeight = wHeight - 100;
+$('.refine-list-wrap').css('height', calHeight);
+}
+$(document).ready(function(){ 
+heightCal();
+});
+$(window).resize(function(){
+heightCal();
+});
+
+
 
 </script>
 
