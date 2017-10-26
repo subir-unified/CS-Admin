@@ -658,7 +658,7 @@ top: 0;
 
  .selectedCredit-info{    display: flex;
     align-items: center;
-    flex-direction: row;}
+    flex-direction: row; justify-content: space-around;}
  .selectedCredit-info-right{padding-left: 20px; border-left: 1px solid #e8ebf6;}   
 
  .creditPackage-list-item{    border-top: 1px solid #e8ebf6;  padding: 15px 0;}
@@ -670,8 +670,8 @@ top: 0;
     flex-direction: row; -webkit-flex-direction: row;
     justify-content: space-between; -webkit-justify-content: space-between;}
 
-.creditPackage-smInfo .title{color: #000000; font-size: 16px;}    
-.creditPackage-smInfo .priceInfo{ color: #161d30;}
+.creditPackage-smInfo .title{color: #000000; font-size: 15px; -webkit-flex-basis: 110px; flex-basis: 110px;}    
+.creditPackage-smInfo .priceInfo{ color: #161d30; -webkit-flex-basis: 110px; flex-basis: 110px;}
 .creditPackage-smInfo .priceInfo .numb{ font-size: 14px; font-weight: 500;}
 .creditPackage-smInfo .priceInfo .price{font-size: 18px; line-height: 28px;}
 .creditPackage-smInfo .btn-holder{display: flex; display: -webkit-flex; align-items: center; }
@@ -737,3 +737,16 @@ top: 0;
     position: absolute;
     right: 10px;
     top: 10px;}
+ .promoCode-input-group .btn-promoCode:hover{background-color: #dae0ff;}   
+.selectedCredit-info-right .price-info{color: #161d30;}
+  .selectedCredit-info-right .price-info .title{    font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    display: block;
+    font-weight: 500;    line-height: 25px;}   
+     .selectedCredit-info-right .price-info .price{    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;}
+
+    .promoCode-wrap{margin-bottom: 55px;}
+
+    .buyCredit-right-wrap .pay-btn-holder{ margin-top: 20px; }
