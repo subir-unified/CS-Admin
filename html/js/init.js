@@ -47,6 +47,10 @@ $(document).ready(function(){
 	  setTimeout(function(){pscroll('caldDropdown-pScroll')},200);
 	});
 
+	$('.company-check').change(function () {                
+		$('#company-info').toggle(this.checked);
+	}).change();
+
 });
 
 

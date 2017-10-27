@@ -18,7 +18,13 @@
 }
 
 @media only screen and (max-width:1366px){
-	
+   .login-frame .log-banner{
+      margin-right: 32rem;
+   }
+	.log-content{
+      width: 32rem;
+      padding: 1rem 3rem;
+   }
 }
 
 @media only screen and (max-width:1200px){
