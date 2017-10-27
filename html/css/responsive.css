@@ -9,12 +9,7 @@
    .sidebar-sub-nav h4 {font-size: 15px;}
    .refine-list-box h4{font-size: 13px;}
    .refine-list-box ul li {padding: 5px 0;}
-.custom-radio input[type="radio"]+label, .custom-check input[type="checkbox"]+label { font-size: 14px; line-height: 18px; padding-left: 25px;}
-.custom-radio input[type="radio"]+label::before {height: 18px; width: 18px;}
-.custom-radio input[type="radio"]:checked+label::after {width: 6px;height: 6px;top: 6px;left: 6px;}
-.custom-check input[type="checkbox"]+label::before{height: 18px; width: 18px;}
-.custom-check input[type="checkbox"]:checked+label::after{line-height: 18px; font-size: 13px; }
-.btn.btn-comn{font-size: 11px;}
+   .btn.btn-comn{font-size: 11px;}
 
 }
 
