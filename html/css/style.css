@@ -12,7 +12,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*{
+    outline: none !important;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
@@ -750,3 +752,161 @@ top: 0;
     .promoCode-wrap{margin-bottom: 55px;}
 
     .buyCredit-right-wrap .pay-btn-holder{ margin-top: 20px; }
+
+
+/* Cart Page */
+
+.cart-listing{
+    max-width: 50rem;
+    margin: auto;
+}
+.cart-listing .card{
+    padding: 0 1rem;
+}
+.cart-listing .card .card-title{
+    color: #161d30;
+    margin-top: .75rem;
+}
+.cart-listing .list-group-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+.vid-row{
+    position: relative;
+}
+.vid-row .cart-vid-thumb{
+    width: 135px;
+    height: 90px;
+    position: relative;
+    margin-right: 15px;
+    float: left;
+}
+.vid-row .cart-vid-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vid-row .vid-desc{
+    float: left;
+}
+.vid-row .vid-desc h5{
+    font-weight: 400;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.vid-row .vid-desc .cr-no{
+    margin: 7px 0;
+}
+.vid-row .vid-desc .vid-meta{
+    margin: 7px 0 0;
+}
+.vid-row .vid-desc .vid-meta a{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    color: #3f51b5;
+}
+.vid-row .vid-desc .vid-meta a:after{
+    width: 1px;
+    height: 15px;
+    background: #c2c7d3;
+    position: absolute;
+    right: -12px;
+    top: 3px;
+    content: "";
+}
+.vid-row .vid-desc .vid-meta a:last-child:after{
+    display: none;
+}
+.vid-row .vid-desc .vid-meta a:hover{
+    text-decoration: underline;
+}
+.vid-row .vid-count{
+    position: absolute;
+    height: 30px;
+    border: 1px solid #eceff4;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    padding: 0 20px;
+    border-radius: 30px;
+    color: #c2c7d3;
+}
+.vid-row .vid-count span{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 30px;
+}
+.vid-row .vid-count a{
+    position: absolute;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    top: 0;
+    color: #c2c7d3;
+    font-size: 18px;
+    font-weight: 400;
+}
+.count-left{
+    left: 0;
+}
+.count-right{
+    right: 0;
+}
+.vid-row .vid-count a:hover{
+    color: #333;
+}
+.total-card{
+    background: #fff;
+    margin: .5rem 0 3rem;
+    min-height: 80px;
+    position: relative;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.05);
+}
+.total-card .tot-amt{
+    line-height: 80px;
+    padding: 0 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.total-card .tot-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 2rem;
+    border-left: 1px solid #e8ebf6;
+}
+.total-card .tot-cr{
+    display: inline-block;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+}
+.total-card .tot-right .btn{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
