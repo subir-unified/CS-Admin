@@ -129,6 +129,12 @@ $(window).resize(function(){
 });
 
 
+$(document).ready(function(){
+	$('.dataSearch-group .dataSearch-btn').on('click', function(){
+		$('.dataSearch-group').toggleClass('active');
+	});
+});
+
 
 
 
