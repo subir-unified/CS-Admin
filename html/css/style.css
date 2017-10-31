@@ -766,6 +766,7 @@ top: 0;
 .cart-listing .card .card-title{
     color: #161d30;
     margin-top: .75rem;
+    font-family: 'Poppins', sans-serif;
 }
 .cart-listing .list-group-item{
     padding-left: 0;
@@ -1048,22 +1049,85 @@ top: 0;
     background: #6cd040;
 }
 
+.smHeading{ font-size: 0.88rem; color: #161d30; line-height: 1.5rem; font-family: 'Poppins', sans-serif; font-weight: 500; }
+
+.tools-dropdown{display: inline-block;}
+.tools-dropdown .dropdown-toggle{    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #000;}
+.tools-dropdown .dropdown-toggle::after{border-top: .3em solid #3f51b5;}
+.tools-dropdown .dropdown-menu{border: none; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);}
+.tools-dropdown .dropdown-menu ul{margin: 0; padding: 0; list-style: none;}
+.tools-dropdown .dropdown-menu ul li{padding: 0.20rem 0.60rem; cursor: pointer; font-size: 0.80rem; color: #8c8c8c;}
+.tools-dropdown .dropdown-menu ul li.active{color:#3f51b5; }
 
 
 
+.myVideo-tools{margin-top: 1.8rem; margin-bottom: 1.2rem;}
+
+.myOrder-listing .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+.myOrder-listing .card-block{ padding-top: 0; padding-bottom: 0;}
+.card-title{
+    color: #161d30;
+    margin-top: .75rem;
+    font-family: 'Poppins', sans-serif;
+}
+.myOrder-listing .cr-no{ font-size: 0.85rem; color: #3f51b5; font-weight: 400; }
+.myOrder-listing .vid-row{}
+
+.data-dropdown .link{background-color: transparent; border: none; line-height: 0.20rem; color: #bfc4d0; font-size: 1rem;}
+.badge-warning.font-wht{ color: #fff; }
+
+.vid-row .action{ padding-left: 0.85rem; }
+
+.data-dropdown .dropdown-menu{border: none; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);}
+.data-dropdown .dropdown-menu ul{margin: 0; padding: 0; list-style: none;}
+.data-dropdown .dropdown-menu ul li{padding: 0.20rem 0.60rem; cursor: pointer; font-size: 0.80rem; color: #c9ced8;}
+.data-dropdown .dropdown-menu ul li.active{color:#3f51b5; }
 
 
+.data-search-wrap form{ margin: 0; }
+.dataSearch-group {
+    position: relative;
+    padding-right: 40px;
+    background-color: #f6f7fb;
+    border-radius: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.dataSearch-group .form-control {
+    color: #8c8c8c;
+    font-size: 13px;
+    border-radius: 0;
+    height: 40px;
+    font-weight: 300;
+    border: none;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all ease-in-out 400ms;
+    -webkit-transition: all ease-in-out 400ms;
+    -moz-transition: all ease-in-out 400ms;
+    -ms-transition: all ease-in-out 400ms;
+    background-color: transparent;
+}
+.dataSearch-group .dataSearch-btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    line-height: 36px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #8c8c8c;
+    opacity: 0.5;
+}
+.dataSearch-btn img{width: 20px;}
+.dataSearch-group.active .form-control{width: 150px; padding: 0 10px; opacity: 1;}
 
 
 
