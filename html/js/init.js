@@ -136,6 +136,15 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
 
+	$('.setting-tgl-bar').on('click', function(){
+			$('.navbar-setting').toggleClass('open',600, function() {
+			setTimeout(
+			pscroll('prfl-dropdown-menu'),1000)
+		});
+	});
+
+});
 
 
