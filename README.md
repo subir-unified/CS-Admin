@@ -11,3 +11,6 @@ Flyset Credit System
 <p>http://unifiedinfotech.co.in/webroot/team1/cs-admin/payment-error.html</p>
 <p>http://unifiedinfotech.co.in/webroot/team1/cs-admin/payment-successful.html</p>
 <p>http://unifiedinfotech.co.in/webroot/team1/cs-admin/index.html</p>
+
+<p>http://unifiedinfotech.co.in/webroot/team1/cs-admin/my-order-listing.html</p>
+<p>http://unifiedinfotech.co.in/webroot/team1/cs-admin/my-videos.html</p>
