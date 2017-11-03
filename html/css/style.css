@@ -208,6 +208,7 @@ header .navbar-brand{font-family: 'signpaintermedium';}
     top: 0;
     left: 0;
     right: 0;
+    height: 100%;
 }
 .filter-nav{display: inline-block; margin: 0; padding: 0;}
 .filter-nav li{list-style: none; display: inline-block;}
@@ -1131,6 +1132,313 @@ top: 0;
 }
 .dataSearch-btn img{width: 20px;}
 .dataSearch-group.active .form-control{width: 150px; padding: 0 10px; opacity: 1;}
+
+/* My Video */
+.myvid-list .vid-top{
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.myvid-list .vid-ord-id{
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.myvid-list .vid-ord-id strong{
+    color: #adadad;
+    font-weight: 400;
+}
+.ver{
+    font-size: 8px;
+    background: #ed3f17;
+    padding: 2px 5px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+    line-height: 12px;
+    border-radius: 3px;
+}
+.myvid-list .vid-thumb{
+    height: 320px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.myvid-list .vid-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.st-drop{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.st-drop .btn{
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+.st-drop .dropdown-toggle::after{
+    display: none;
+}
+.st-drop .dropdown-menu{
+    left: auto !important;
+    right: 0;
+}
+.st-drop .dropdown-item{
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.st-drop .dropdown-item:last-child{
+    border: none;
+}
+.myvid-list .vid-meta{
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.myvid-list .vid-meta strong{
+    color: #adadad;
+    font-weight: 400;
+}
+.myvid-list .vid-meta:last-child{
+    margin-bottom: 0;
+}
+.myvid-list .vid-tags{
+    margin-left: 1rem;
+}
+.myvid-list .vid-tags span{
+    font-size: 10px;
+    display: inline-block;
+    padding: 1px 6px;
+    background: #e4e4e4;
+    border-radius: 2px;
+}
+.vid-rev{
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    padding: .2rem .7rem;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+.vid-rev:hover{
+    background: rgba(0,0,0,0.7);
+}
+
+
+/* Myorder List */
+.filter-cols{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.filter-cols .flt-col{
+    margin: 0 1rem;
+}
+.filter-cols .flt-col .col-title{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    position: relative;
+}
+.filter-cols .flt-col .col-title:after{
+    content: ":";
+    position: absolute;
+    right: -10px;
+    font-size: 18px;
+    top: -4px;
+}
+.filter-cols .flt-col .dt-box{
+    display: inline-block;
+}
+.dt-box .form-control{
+    border-radius: 0 !important;
+    font-size: 12px;
+}
+.dt-box .input-group-addon{
+    border-radius: 0 !important;
+}
+.custom-radio{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.custom-radio input[type=radio]{
+    display: none;
+}
+.custom-radio span{
+    position: relative;
+    display: inline-block;
+    padding-left: 26px;
+}
+.custom-radio span:before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #dedede;
+    border-radius: 100%;
+    left: 0;
+    top: 0;
+    content: "";
+    box-shadow: 0 0 3px rgba(0,0,0,0.1) inset;
+}
+.custom-radio span:after{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    left: 5px;
+    top: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    content: "";
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+}
+.custom-radio input[type=radio]:checked ~  span:before{
+    background: #3f51b5;
+}
+.custom-radio input[type=radio]:checked ~  span:after{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.myorder-list{
+    max-width: 50rem;
+    margin: auto;
+}
+.myorder-list .card{
+    margin-bottom: 1rem;
+}
+.myorder-list .ord-top{
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.myorder-list .ord-top strong{
+    color: #adadad;
+    font-weight: 400;
+}
+
+
+.myorder-list .temp-list{
+    margin: 1.25rem 0;
+}
+.myorder-list .temp-list > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 70%;
+}
+.myorder-list .temp-list > ul > li{
+    border-bottom: 1px solid #fff;
+}
+.myorder-list .temp-list > ul > li > a{
+    display: block;
+    padding: .7rem;
+    color: #3f51b5;
+    background: #f9f9f9;
+    position: relative;
+}
+.myorder-list .temp-list > ul > li > a:hover{
+    background: #f2f2f2;
+}
+.myorder-list .temp-list > ul > li > a .badge{
+    position: absolute;
+    right: .7rem;
+}
+.myorder-list .temp-list > ul > li > a .qty{
+    padding-left: 10px;
+    margin-left: 10px;
+    color: #c2c2c2;
+    border-left: 1px solid #ddd;
+    font-size: 10px;
+}
+.myorder-list .temp-list > ul > li > a .qty strong{
+    font-size: 12px;
+    color: #414141;
+    padding-left: 2px;
+}
+.myorder-list .ord-cr{
+    text-align: right;
+}
+.myorder-list .ord-cr h2{
+    font-weight: 400;
+    margin-bottom: .5rem;
+    color: #3f51b5;
+}
+.myorder-list .ord-cr h2 span{
+    font-size: 14px;
+    color: #b0b0b0;
+}
+.myorder-list .ord-cr h3{
+    color: #3f51b5;
+    font-weight: 400;
+}
+.myorder-list .ord-cr h3 span{
+    font-size: 14px;
+    color: #b0b0b0;
+}
+.myorder-list .ord-btns{
+    margin-top: 2rem;
+}
+.myorder-list .ord-btns .btn{
+    margin-right: .5rem;
+}
+.myorder-list .ord-btns .btn .icons{
+    margin-right: .5rem;
+    opacity: .7;
+}
+.myorder-list .btn-cancel{
+    color: #ababab;
+    text-decoration: underline;
+    margin-top: 7px;
+    display: inline-block;
+}
+.myorder-list .btn-cancel:hover{
+    color: #ed3f17;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
