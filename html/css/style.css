@@ -657,7 +657,7 @@ top: 0;
     border-radius: 100%; line-height: 17px; margin-left:5px;}
 
 
- .card.custom-card{ border: none; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);}  
+ .card.custom-card{ border: none; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1); margin-bottom: 1rem;}  
 
  .selectedCredit-info{    display: flex;
     align-items: center;
@@ -1417,8 +1417,16 @@ top: 0;
     color: #ed3f17;
 }
 
-
-
+.myvid-group{
+    margin-bottom: 2rem;
+}
+.myvid-group .grp-title{
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #ededed;
+}
 
 
 
