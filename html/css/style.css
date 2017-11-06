@@ -1322,9 +1322,6 @@ top: 0;
     max-width: 50rem;
     margin: auto;
 }
-.myorder-list .card{
-    margin-bottom: 1rem;
-}
 .myorder-list .ord-top{
     border-bottom: 1px solid #f2f2f2;
     padding-bottom: 1.25rem;
@@ -1427,8 +1424,16 @@ top: 0;
     padding-bottom: .5rem;
     border-bottom: 1px solid #ededed;
 }
-
-
+.vd-info{
+    color: #333;
+}
+.vd-info p{
+    margin: .4rem 0;
+}
+.vd-info p strong{
+    color: #adadad;
+    font-weight: 400;
+}
 
 
 
